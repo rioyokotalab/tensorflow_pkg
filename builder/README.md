@@ -8,6 +8,7 @@
 - gcc 5.2 (`source /usr/apps.sp3/nosupport/gsic/env/gcc-5.2.sh`)
 - jdk 1.8 (`source /usr/apps.sp3/nosupport/gsic/env/jdk-1.8.0_101.sh`)
 - accessible to external site (http://tsubame.gsic.titech.ac.jp/node/1344)
+- binutils 2.27 installed by linuxbrew
 
 ## install
 ```sh
