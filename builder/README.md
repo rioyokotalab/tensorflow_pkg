@@ -1,6 +1,6 @@
-# TensorFlow installer for TSUBAME 2.5
+# TensorFlow builder for TSUBAME 2.5
 
-`install.sh` installs TensorFlow to virtualenv `$HOME/.venv/tensorflow`.
+`build.sh` builds TensorFlow
 
 ## Requrement
 - `export PATH=$HOME/.local/bin:$PATH` in `$HOME/.bash_profile`
@@ -11,5 +11,5 @@
 
 ## install
 ```sh
-$ bash install.sh
+$ bash build.sh
 ```
