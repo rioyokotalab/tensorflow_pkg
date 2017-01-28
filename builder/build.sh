@@ -14,6 +14,7 @@ fi
 source /usr/apps.sp3/nosupport/gsic/env/python-2.7.7.sh
 source /usr/apps.sp3/nosupport/gsic/env/gcc-5.2.sh
 source /usr/apps.sp3/nosupport/gsic/env/jdk-1.8.0_101.sh
+export LD_LIBRARY_PATH=/usr/apps.sp3/nosupport/gsic/cudnn/5.1-cuda7.5/cuda/lib64:$LD_LIBRARY_PATH
 
 # install virtualenv
 if [ ! `which virtualenv` ]; then

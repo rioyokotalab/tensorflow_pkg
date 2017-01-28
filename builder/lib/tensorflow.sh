@@ -1,6 +1,6 @@
 #!/bin/sh
 
-function install_tensorflow {
+function build_tensorflow {
   # clone tensorflow@r0.12
   git clone -b r0.12 --single-branch --depth=1 https://github.com/tensorflow/tensorflow tmp/tensorflow
 
@@ -36,6 +36,11 @@ function install_tensorflow {
   protobuf_patch_path=$(command readlink -f ../../patch/protobuf.bzl.patch)
   pushd `bazel info output_base`
   patch -p1 < $protobuf_patch_path
+
+  # fix cudnn.h
+  rm ./external/local_config_cuda/cuda/include/cudnn.h
+  ln -s /usr/apps.sp3/nosupport/gsic/cudnn/5.1-cuda7.5/cuda/include/cudnn.h ./external/local_config_cuda/cuda/include/cudnn.h
+
   popd
 
   # build
