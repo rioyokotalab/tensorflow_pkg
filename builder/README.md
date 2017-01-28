@@ -10,6 +10,7 @@
 - accessible to external site (http://tsubame.gsic.titech.ac.jp/node/1344)
 - newer binutils installed by linuxbrew
 - cuDNN (`export LD_LIBRARY_PATH=/usr/apps.sp3/nosupport/gsic/cudnn/5.1-cuda7.5/cuda/lib64`)
+- binutils 2.27 installed by linuxbrew
 
 ## install
 ```sh
